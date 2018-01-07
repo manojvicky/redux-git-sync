@@ -1,5 +1,5 @@
 {
-  "name": "redux",
+  "name": "redux01",
   "version": "1.0.0",
   "description": "sync with redux",
   "main": "index.js",
@@ -24,6 +24,7 @@
     "babel-preset-react": "^6.24.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "redux": "^3.7.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.10.0"
   }
