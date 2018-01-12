@@ -1,5 +1,10 @@
-export const initalstate = 0;
-const counters = (state = initalstate, action) => {
+import constants from "./counter.constant";
+
+const initalstate = {
+  data: 0
+};
+
+export default function reducer(state=initalstate, action){
   switch (action.type) {
     case 'INCREMENT':
       return (Object.assign({}, state, action.data))
@@ -12,4 +17,4 @@ const counters = (state = initalstate, action) => {
   }
 }
 
-export default counters
+export {initalstate};

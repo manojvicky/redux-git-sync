@@ -1,23 +1,16 @@
 import {connect} from 'react-redux';
 import Counter from './counter';
-import counterActions from './counter.actions';
+import * as counterActions from './counter.actions';
 import { bindActionCreators } from "redux";
 
-const mapStateToProps = (state)=>{
-    return{
-        data: state.data
-    }
-}
-
-const mapDispatchToProps = (dispatch)=>{
-    return{
-        actions: bindActionCreators(action, dispatch)
-    }
-}
-
-const CounterContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
+export default connect(
+    (state)=>({
+        data: state.counter.data
+    }),
+    (dispatch)=>({
+        actions: bindActionCreators(counterActions, dispatch)
+    })
 )(Counter)
+
 
 export default CounterContainer
