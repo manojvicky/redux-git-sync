@@ -7,11 +7,11 @@ class Counter extends React.Component {
         this.decrement = this.decrement.bind(this);
         
     }
-    increment(){this.props.data+1;
-console.log("increment");    
+    increment(){
+        this.props.actions.increment(this.props.data+1);
 };
-    decrement(){this.props.data-1;
-console.log("decrement");     
+    decrement(){;
+this.props.actions.increment(this.props.data-1);  
 };
    render() {
       return (

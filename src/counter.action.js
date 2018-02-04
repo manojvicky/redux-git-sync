@@ -1,4 +1,5 @@
-import constants from "./counter.constant"
+import constants from "./counter.constant";
+
 export function increment(data){
   return {
     type: 'INCREMENT',

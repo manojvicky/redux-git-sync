@@ -1,2 +1,6 @@
-export const INCREMENT = "INCREMENT";
-export const DECREMENT = "DECREMENT";
+const  constants={
+    INCREMENT:"INCREMENT",
+    DECREMENT:"DECREMENT"
+}
+
+export default constants;
