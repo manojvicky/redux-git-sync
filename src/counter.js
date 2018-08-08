@@ -1,6 +1,6 @@
 import React from 'react';
 import otherFunction from './otherFunction';
-
+console.log("when commit in wrong branch,then what to do");
 class Counter extends React.Component {
     constructor(){
         super();
