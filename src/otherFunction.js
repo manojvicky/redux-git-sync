@@ -1,7 +1,7 @@
-export default function(salutation, name){
+// export default function(salutation, name){
     
-    console.log("this of function", salutation, name, this);
-    this.setState({
-        kiki: "kiki"
-    })
-}
+//     console.log("this of function", salutation, name, this);
+//     this.setState({
+//         kiki: "kiki"
+//     })
+// }
